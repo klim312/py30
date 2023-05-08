@@ -1,30 +1,22 @@
 class SuperHero:
     people = 'people'
-
-    def init(self, name, nickname, superpower, health_points, catchphrase):
-        self.name = name
-        self.nickname = nickname
-        self.superpower = superpower
-        self.health_points = health_points
-        self.catchphrase = catchphrase
-
-    def print_name(self):
+    def __int__(self,name, nickname,superpower,health_points, catchphrase):
+        self.name=name
+        self.nickname=nickname
+        self.superpower=superpower
+        self.health_points=health_points
+        self.catchphrase=catchphrase
+    def get_name(self):
         print(self.name)
-
-
-
-    def double_health(self):
+    def double_health_points(self):
         self.health_points *= 2
-
     def __str__(self):
-        return f'Hero: Nickname {self.nickname}, Superpower {self.superpower}, health_points {self.health_points}'
-
+        return f"{self.nickname}, {self.superpower}, {self.health_points}"
     def __len__(self):
-        return f'SuperHero("{self.name}", "{self.nickname}", "{self.superpower}", {self.health_points}, "{self.catchphrase}")'
+        return len(self.catchphrase)
 
-
-hero = SuperHero
-hero.print_name()
-hero.double_health()
+hero = SuperHero('Bruce Wayne', 'Batman', 'Genius-level intellect and martial arts', 100, 'I am Batman')
+hero.get_name()
+hero.double_health_points()
 print(hero)
 print(len(hero))
