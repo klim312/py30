@@ -3,4 +3,3 @@ create gitignore
         .idea
         .gitignore
         __pycache__/
-         git
