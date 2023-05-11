@@ -1,5 +1,5 @@
 create gitignore
-        venv
-        .idea
-        .gitignore
-        __pycache__/
+venv
+.idea
+.gitignore
+__pycache__/
