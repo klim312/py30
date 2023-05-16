@@ -45,7 +45,7 @@ class EarthHero(SuperHero):
 
     def double_hp(self):
         self.health_points **= 2
-        self.fly = True
+        self.fly = False
 
 class Villain(AirHero):
     people = 'monster'
