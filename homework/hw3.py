@@ -21,7 +21,7 @@ class Bank:
         return self._balance
 
 
-# testing
+
 client1 = Bank("klim", 100)
 client2 = Bank("beka", 100)
 
@@ -33,8 +33,6 @@ print(client1.get_balance())
 
 client1._combine_balance(client2)
 print(client1.get_balance())
-
-
 
 class Calculator:
     def __init__(self, a, b):
