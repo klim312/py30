@@ -8,7 +8,7 @@ class Bank:
         self._balance += float(amount)
         print("New balance:", self._balance)
 
-    def str(self):
+    def _kill(self):
         self._balance = 0
 
     def _jackpot(self):
