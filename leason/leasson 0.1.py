@@ -41,5 +41,3 @@
 #
 #     def a1(self): ...# метод
 #     person2 = person
-
-
