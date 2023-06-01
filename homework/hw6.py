@@ -1,6 +1,5 @@
 import sqlite3
 
-# Создание базы данных и таблицы студентов
 conn = sqlite3.connect('students.db')
 cursor = conn.cursor()
 cursor.execute('''CREATE TABLE IF NOT EXISTS students
